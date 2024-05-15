@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: "app-name-here"
+  labels:
+    app: "app-name-here"
+spec:
+  selector:
+    matchLabels:
+      app: appnamehere
+    # quantidade de PODs  
+    replicas: 2
+    # aqui começa a config dos pods
+    template:
+      metadata:
+        labels:
+          app: "app-name-here"
+      spec:
+        containers:
+          - name: appnamehere
+            image: "image-app-name-here:latest"

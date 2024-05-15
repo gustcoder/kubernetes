@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "app-name-here"
+  labels:
+    app: "app-name-here"
+spec:
+  containers:
+    - name: appnamehere
+      image: "image-app-name-here:latest"
