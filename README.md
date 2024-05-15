@@ -1,5 +1,6 @@
 ![Badge Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUÍDO&color=GREEN&style=for-the-badge)
 ![Badge Kubernetes](http://img.shields.io/static/v1?label=KUBERNETES&message=V.1.30.0&color=blue&style=for-the-badge)
+![Badge FullCycle](http://img.shields.io/static/v1?label=FULLCYCLE&message=3.0&color=orange&style=for-the-badge)
 ![Badge PDI](http://img.shields.io/static/v1?label=PDI&message=LOGCOMEX&color=purple&style=for-the-badge)
 
 <h1>Comandos Básicos</h1>
