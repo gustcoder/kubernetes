@@ -7,7 +7,7 @@
 ## Aplicando arquivo de config do POD
 ```kubectl apply -f kubernetes/pod.yaml```
 
-## Sempre que modificar o yaml, necessário fazer o apply novamente
+<b>Obs.: Sempre que modificar o yaml, necessário fazer o apply novamente</b>
 
 
 ## Listando PODs
@@ -32,13 +32,15 @@
 ## Listando ReplicaSets
 ```kubectl get replicasets```
 
-## Neste caso, se um POD for excluído, o ReplicaSet cria outro no lugar
+<b>Obs.: Neste caso, se um POD for excluído, o ReplicaSet cria outro no lugar.</b>
 
-## O "problema" do ReplicaSet é que é preciso apagar todos os PODs existentes para subir uma nova versão de imagem, caso necessário
+## O "problema" do ReplicaSet
 
-## Para otimizar isso, usamos o Deployment, onde basta mudar a propriedade "kind" do arquivo yaml. Com isso, quando houver uma modificação de imagem/versão e for feito um apply, os PODs serão terminados e recriados automaticamente
+É preciso apagar todos os PODs existentes para subir uma nova versão de imagem, caso necessário, quando usamos o <b>ReplicaSet</b>
+Para otimizar isso, usamos o <b>Deployment</b>, onde basta mudar a propriedade ``kind`` do arquivo yaml. 
+Com isso, quando houver uma modificação de imagem/versão e for feito um apply, os PODs serão terminados e recriados automaticamente.
 
-## Com Deployment, os ReplicaSet antigos são mantidos (kubectl get replicasets)
+É importante lembrar que, com <b>Deployment</b>, os <b>ReplicaSet</b> antigos são mantidos (``kubectl get replicasets``).
 
 # Fazendo Rollout e Revisões
 
@@ -50,8 +52,7 @@
 
 ## Voltando para uma versão específica
 ```kubectl rollout undo deployment appname --to-revision=REVISION```
-
-## Para obter o número da revisão, usar o comando history > REVISION
+<b>Obs.: Para obter o número da revisão, usar o comando ``kubectl rollout history`` > REVISION</b>
 
 ## Listando detalhes do Deployment
 ```kubectl describe deployment appname```
