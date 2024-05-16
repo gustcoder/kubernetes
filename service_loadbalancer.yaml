@@ -5,7 +5,7 @@ metadata:
 spec:
   selector:
     app: appnamehere
-  type: ClusterIP
+  type: LoadBalancer
   ports:
   - name: app-name-service
     port: 80
