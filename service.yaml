@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Service
+metadata:
+  name: "app-name-service"
+spec:
+  selector:
+    app: appnamehere
+  type: ClusterIP
+  ports:
+  - name: app-name-service
+    port: 80
+    # caso targetPort nao seja informado, será a mesma informada em port
+    targetPort: 8000
+    protocol: TCP

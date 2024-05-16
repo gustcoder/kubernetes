@@ -57,3 +57,35 @@ Com isso, quando houver uma modificação de imagem/versão e for feito um apply
 
 ## Listando detalhes do Deployment
 ```kubectl describe deployment appname```
+
+<h1>Services</h1>
+
+## Aplicando arquivo de config do service (ClusterIP)
+```kubectl apply -f kubernetes/service.yaml```
+
+## Listando services
+```kubectl get svc```
+
+## Redirecionando portas do Service
+```kubectl port-forward svc/appname-service 8000:80```
+
+<b>Obs.: a diferença deste port forward de service para de pod é que, antes acessávamos direto o POD em si. Já com o service (ClusterIP) seria similar a um LoadBalancer, onde o service irá redirecionar a requisição para os pods/aplicações</b>
+
+<b>Obs.: usar targetPort quando for necessário direcionar para uma porta de um container diferente do que o do service (uma coisa é a porta do service, outra é a do container que roda "dentro" do POD</b>
+
+<h1>Proxy - API Kubernetes</h1>
+```kubectl proxy --port=8080```
+
+<b>Ao acessar http://localhost:8080 seremos redicionados para a API do K8s</b>
+
+## Service NodePort
+```type: NodePort```
+
+Gera e libera uma determinada porta (ou range de portas) em todos os nodes, bastando saber o endereço do node para acessar o serviço (porém é a forma mais "arcaica").
+
+## Aplicando arquivo de config do service (LoadBalancer)
+```kubectl apply -f kubernetes/service_loadbalancer.yaml```
+
+Muito utilizado quando um cluster está sendo gerenciado/conectado diretamente a um <b>servidor em nuvem</b>.
+
+<b>Obs.: É gerado um IP externo e acessível (EXTERNAL-IP).</b>
