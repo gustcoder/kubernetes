@@ -8,7 +8,9 @@
 ## Aplicando arquivo de config do POD
 ```kubectl apply -f kubernetes/pod.yaml```
 
-<b>Obs.: Sempre que modificar/criar um yaml, necessário fazer o apply dele novamente</b>
+![Badge Importante](http://img.shields.io/static/v1?label=IMPORTANTE&message=apply&color=orange&style=for-the-badge)
+<br>
+Obs.: Sempre que modificar/criar um yaml, necessário fazer o <b>apply</b> dele novamente.
 
 
 ## Listando PODs
