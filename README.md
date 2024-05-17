@@ -8,7 +8,7 @@
 ## Aplicando arquivo de config do POD
 ```kubectl apply -f kubernetes/pod.yaml```
 
-<b>Obs.: Sempre que modificar o yaml, necessário fazer o apply novamente</b>
+<b>Obs.: Sempre que modificar/criar um yaml, necessário fazer o apply dele novamente</b>
 
 
 ## Listando PODs
