@@ -103,3 +103,9 @@ Similar ao Docker, temos o comando:
 ```
 kubectl exec -it pod-name -- bash
 ```
+
+<h1>Listando Logs do POD</h1>
+
+```
+kubectl logs pod-name
+```
