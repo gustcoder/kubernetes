@@ -89,3 +89,17 @@ Gera e libera uma determinada porta (ou range de portas) em todos os nodes, bast
 Muito utilizado quando um cluster está sendo gerenciado/conectado diretamente a um <b>servidor em nuvem</b>.
 
 <b>Obs.: É gerado um IP externo e acessível (EXTERNAL-IP).</b>
+
+<h1>ConfigMap</h1>
+
+Recurso utilizado para gerenciar variáveis de ambiente.
+
+<b>Importante!!</b>
+Sempre que for modificado, necessário ser feito um apply -f tanto no yaml configmap-env como também no deployment.yaml
+
+<h1>Ingressando dentro do POD</h1>
+
+Similar ao Docker, temos o comando:
+```
+kubectl exec -it pod-name -- bash
+```

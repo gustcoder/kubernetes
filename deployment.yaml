@@ -20,3 +20,19 @@ spec:
         containers:
           - name: appnamehere
             image: "image-app-name-here:latest"
+            env:
+              # 1. Declarando var env hard-coded
+              - name: NAME
+                value: "Gustavo"
+              # 2. Puxando var env do ConfigMap  
+              - name: AGE
+                valueFrom:
+                  configMapKeyRef:
+                    name: appname-env
+                    key: AGE
+            # 3. Desta forma todas as keys declaradas
+            # em configMap são carregadas
+            envFrom:
+              - configMapKeyRef:
+                name: appname-env
+                
