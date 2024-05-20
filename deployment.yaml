@@ -36,7 +36,14 @@ spec:
                 port: 8000
               periodseconds: 3
               failureThreshold: 1 # limite de quantos erros até reiniciar o serviço
-              initialDelaySeconds: 10 # tempo para o app subir
+              # initialDelaySeconds: 10 # tempo para o app subir (com Startup, não é necessário)
+            # funciona como o readiness porém somente no processo de inicialização
+            startupProbe:
+              httpGet:
+                path: /healthz
+                port: 8000
+              periodseconds: 3
+              failureThreshold: 10 # limite de quantos erros até reiniciar o serviço
             env:
               # 1. Declarando var env hard-coded
               - name: NAME

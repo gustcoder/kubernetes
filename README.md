@@ -127,3 +127,7 @@ Recurso para só liberar tráfego para a aplicação quando a mesma estiver <b>p
 ![Badge Importante](http://img.shields.io/static/v1?label=IMPORTANTE&message=apply&color=orange&style=for-the-badge)
 <br>
 Obs.: Liveness e Readiness podem entrar em conflito dependendo das configurações. É necessário avaliar.
+
+<h1>Health Check Probes (Startup)</h1>
+
+Funciona como o <b>Readiness</b> porém somente no processo de inicialização
