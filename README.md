@@ -111,3 +111,9 @@ kubectl exec -it pod-name -- bash
 ```
 kubectl logs pod-name
 ```
+<h1>Health Check Probes (Liveness)</h1>
+
+## Monitorando PODs
+```
+watch -n1 kubectl get pods
+```
