@@ -130,4 +130,4 @@ Obs.: Liveness e Readiness podem entrar em conflito dependendo das configuraçõ
 
 <h1>Health Check Probes (Startup)</h1>
 
-Funciona como o <b>Readiness</b> porém somente no processo de inicialização
+Funciona como o <b>Readiness</b> porém somente no processo de inicialização.
