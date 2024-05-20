@@ -139,7 +139,7 @@ Funciona como o <b>Readiness</b> porém somente no processo de inicialização.
 
 Necessário utilizar/instalar um metric-server (ex.: Prometheus/Grafana).
 
-<h1>Resources</h1>
+## Resources
 
 Os recursos definidos no .yaml são multiplicados pelo número de replicas dos PODs.
 <b>Lembrar disso ao dimensionar os resources!</b>
@@ -149,3 +149,12 @@ Os recursos definidos no .yaml são multiplicados pelo número de replicas dos P
 ```
 kubectl top pod pod-name-here
 ```
+
+## Listando HPAs
+```
+kubectl get hpa
+```
+
+## Ferramenta para teste de stress
+
+Fortio: https://github.com/fortio/fortio
