@@ -29,6 +29,14 @@ spec:
               failureThreshold: 1 # limite de quantos erros até reiniciar o serviço
               timeoutSeconds: 1 # testse integrados precisam de mais tolerancia
               successThreshold: 1 # numero de testes para considerar a aplicacao ok
+            # só libera o trafego quando a aplicacao estiver pronta
+            readinessProbe:
+              httpGet:
+                path: /healthz
+                port: 8000
+              periodseconds: 3
+              failureThreshold: 1 # limite de quantos erros até reiniciar o serviço
+              initialDelaySeconds: 10 # tempo para o app subir
             env:
               # 1. Declarando var env hard-coded
               - name: NAME

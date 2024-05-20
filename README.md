@@ -113,7 +113,17 @@ kubectl logs pod-name
 ```
 <h1>Health Check Probes (Liveness)</h1>
 
+Monitora disponibilidade de aplicações <b>(live)</b>
+
 ## Monitorando PODs
 ```
 watch -n1 kubectl get pods
 ```
+
+<h1>Health Check Probes (Readiness)</h1>
+
+Recurso para só liberar tráfego para a aplicação quando a mesma estiver <b>pronta</b>
+
+![Badge Importante](http://img.shields.io/static/v1?label=IMPORTANTE&message=apply&color=orange&style=for-the-badge)
+<br>
+Obs.: Liveness e Readiness podem entrar em conflito dependendo das configurações. É necessário avaliar.
