@@ -138,3 +138,14 @@ Funciona como o <b>Readiness</b> porém somente no processo de inicialização.
 <h1>HPA :: Horizontal Pod Autoscaling</h1>
 
 Necessário utilizar/instalar um metric-server (ex.: Prometheus/Grafana).
+
+<h1>Resources</h1>
+
+Os recursos definidos no .yaml são multiplicados pelo número de replicas dos PODs.
+<b>Lembrar disso ao dimensionar os resources!</b>
+
+## Monitorando recursos de um POD
+
+```
+kubectl top pod pod-name-here
+```
