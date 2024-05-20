@@ -16,6 +16,9 @@ Obs.: Sempre que modificar/criar um yaml, necessário fazer o <b>apply</b> dele 
 ## Listando PODs
 ```kubectl get pods```
 
+## Listando APIs Services
+```kubectl get apiservices```
+
 ## Listando detalhes de um POD
 ```kubectl describe pod NAME```
 
@@ -134,4 +137,4 @@ Funciona como o <b>Readiness</b> porém somente no processo de inicialização.
 
 <h1>HPA :: Horizontal Pod Autoscaling</h1>
 
-Necessário utilizar/instalar um metric-server (ex.: Prometheus/Grafana)
+Necessário utilizar/instalar um metric-server (ex.: Prometheus/Grafana).
