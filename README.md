@@ -114,7 +114,9 @@ kubectl exec -it pod-name -- bash
 ```
 kubectl logs pod-name
 ```
-<h1>Health Check Probes (Liveness)</h1>
+<h1>Health Check Probes</h1>
+
+## Liveness
 
 Monitora disponibilidade de aplicações <b>(live)</b>
 
@@ -123,7 +125,7 @@ Monitora disponibilidade de aplicações <b>(live)</b>
 watch -n1 kubectl get pods
 ```
 
-<h1>Health Check Probes (Readiness)</h1>
+## Readiness
 
 Recurso para só liberar tráfego para a aplicação quando a mesma estiver <b>pronta</b>
 
@@ -131,7 +133,7 @@ Recurso para só liberar tráfego para a aplicação quando a mesma estiver <b>p
 <br>
 Obs.: Liveness e Readiness podem entrar em conflito dependendo das configurações. É necessário avaliar.
 
-<h1>Health Check Probes (Startup)</h1>
+## Startup
 
 Funciona como o <b>Readiness</b> porém somente no processo de inicialização.
 
