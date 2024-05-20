@@ -20,6 +20,12 @@ spec:
         containers:
           - name: appnamehere
             image: "image-app-name-here:latest"
+            # minimum system requirements
+            resources:
+              requests:
+                cpu: 100m # (unidade de milicores :: 1 vCPU == 1000m)
+                memory: 20Mi # megabytes
+
             # recurso de health-check
             livenessProbe:
               httpGet:
