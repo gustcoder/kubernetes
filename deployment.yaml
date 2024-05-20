@@ -24,7 +24,11 @@ spec:
             resources:
               requests:
                 cpu: 100m # (unidade de milicores :: 1 vCPU == 1000m)
-                memory: 20Mi # megabytes
+                memory: 16Mi # megabytes
+              # lembrar que recursos são multiplicados por número de replicas
+              limits:
+                cpu: 500m
+                memory: 32Mi
 
             # recurso de health-check
             livenessProbe:
