@@ -6,4 +6,4 @@ spec:
   capacity:
     storage: 50Gi
   accessModes:
-    - ReadWriteOnce
+    - ReadWriteOnce # le e grava desde que esteja no mesmo node
