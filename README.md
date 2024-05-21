@@ -3,7 +3,7 @@
 ![Badge FullCycle](http://img.shields.io/static/v1?label=FULLCYCLE&message=3.0&color=orange&style=for-the-badge)
 ![Badge PDI](http://img.shields.io/static/v1?label=PDI&message=LOGCOMEX&color=purple&style=for-the-badge)
 
-<h1>Comandos Básicos</h1>
+<h1>Comandos Básicos + Minha Documentação</h1>
 
 ## Aplicando arquivo de config do POD
 ```kubectl apply -f kubernetes/pod.yaml```
