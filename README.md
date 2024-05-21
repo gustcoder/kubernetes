@@ -160,3 +160,19 @@ kubectl get hpa
 ## Ferramenta para teste de stress
 
 Fortio: https://github.com/fortio/fortio
+
+<h1>Statefulsets e Volumes Persistentes</h1>
+
+## Obtendo os storageclass
+```
+kubectl get storageclass
+```
+
+O espaço em disco pode ser estático ou dinâmico (claim).
+
+## Obtendo as persistent volume claim
+```
+kubectl get pvc
+```
+
+<b>"Claim"</b> vem de solicitar, ou seja, espaços em disco são solicitados para serem "reservados" nos dispositivos de armazenamento utilizado (AWS, Digital Ocean etc).
