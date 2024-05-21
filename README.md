@@ -176,3 +176,7 @@ kubectl get pvc
 ```
 
 <b>"Claim"</b> vem de solicitar, ou seja, espaços em disco são solicitados para serem "reservados" nos dispositivos de armazenamento utilizado (AWS, Digital Ocean etc).
+
+## Statefulset
+
+É um objeto Kubernetes que permite trabalharmos de forma ordenada com relação a como os PODs sobem, qual a ordem de precedência (quem é o master e quem são os slaves) etc, diferentemente dos deployments, que não tem este tipo de controle.
