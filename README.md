@@ -180,3 +180,11 @@ kubectl get pvc
 ## Statefulset
 
 É um objeto Kubernetes que permite trabalharmos de forma ordenada com relação a como os PODs sobem, qual a ordem de precedência (quem é o master e quem são os slaves) etc, diferentemente dos deployments, que não tem este tipo de controle.
+
+<h1>Ingress</h1>
+
+É um serviço que funciona de maneira similar à um <b>LoadBalancer</b>, porém é um "ponto único de entrada" onde, o serviço do <b>Ingress</b> tem um IP, e todas as requisições passam por ele.
+
+De certa forma lembra também uma <b>API Gateway</b>.
+
+A depender da rota passada, ele redireciona para o serviço configurado, o que também nos remete ao funcionamento de um <b>Proxy Reverso</b>.
