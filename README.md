@@ -199,3 +199,9 @@ Existem 2 formas gerais de instalar certificados:
 
 ## Instalando o Cert Manager
 https://cert-manager.io/docs/installation/
+
+
+## Listando PODs com namespaces do cert-manager
+```
+kubectl get po -n cert-manager
+```
