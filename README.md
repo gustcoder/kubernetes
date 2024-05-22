@@ -188,3 +188,14 @@ kubectl get pvc
 De certa forma lembra também uma <b>API Gateway</b>.
 
 A depender da rota passada, ele redireciona para o serviço configurado, o que também nos remete ao funcionamento de um <b>Proxy Reverso</b>.
+
+<h1>Cert Manager</h1>
+
+Existem 2 formas gerais de instalar certificados:
+
+1. SSL/TLS conforme o próprio Ingress recomenda (com secret)
+
+2. Cert Manager, gera automaticamente os certificados e os gerencia.
+
+## Instalando o Cert Manager
+https://cert-manager.io/docs/installation/
