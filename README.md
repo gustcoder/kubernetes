@@ -205,3 +205,13 @@ https://cert-manager.io/docs/installation/
 ```
 kubectl get po -n cert-manager
 ```
+
+## Listando certificados
+```
+kubectl get certificates
+```
+
+## Detalhes dos certificados
+```
+kubectl describe certificate certificate-name-here
+```
