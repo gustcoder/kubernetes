@@ -240,3 +240,8 @@ kubectl get ns
 ```
 kubectl get po -n=my-namespace
 ```
+
+## Aplicando arquivo de config do POD para Namespace específico
+```
+kubectl apply -f kubernetes/deployment.yaml -n=my-namespace
+```
