@@ -245,3 +245,28 @@ kubectl get po -n=my-namespace
 ```
 kubectl apply -f kubernetes/deployment.yaml -n=my-namespace
 ```
+
+<h1>Contextos</h1>
+
+## Listando configuração
+```
+kubectl config view
+```
+
+## Verificando contexto atual
+```
+kubectl config current-context
+```
+
+## Criando um contexto
+```
+kubectl config set-context my-context --namespace=my-namespace --cluster=my-cluster --user=my-user
+```
+
+## Setando um contexto
+```
+kubectl config use-context my-context
+```
+![Badge Importante](http://img.shields.io/static/v1?label=IMPORTANTE&message=context&color=orange&style=for-the-badge)
+<br>
+Obs.: Recomendado criar/setar um contexto para não misturar ambientes (ex.: dev x prd).
