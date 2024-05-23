@@ -222,6 +222,8 @@ kubectl describe certificate certificate-name-here
 
 Quando não informado, tudo será instalado no namespace <b>default</b>.
 
+![Badge Importante](http://img.shields.io/static/v1?label=IMPORTANTE&message=apply&color=orange&style=for-the-badge)
+<br>
 Obs.: Recomendado criar um namespace sempre que um projeto for criado.
 
 ## Criando namespaces
