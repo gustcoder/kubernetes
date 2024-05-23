@@ -288,3 +288,9 @@ kubectl api-resources
 ## RBAC
 
 Sistema baseado em roles para garantir maior segurança no Kubernetes, dando os "papéis" necessários para os acessos.
+
+## ClusterRoles
+
+No <b>security.yaml</b> podemos setar o kind como <b>ClusterRole</b> ao invés de apenas <b>Role</b> (mesma coisa para ClusterRoleBinding ao invés de RoleBinding).
+
+Isso faz com que os papéis sejam aplicados a nível de cluster e não só para namespaces específicos (caso seja necessário um role mais geral).
