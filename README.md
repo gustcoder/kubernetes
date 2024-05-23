@@ -269,4 +269,22 @@ kubectl config use-context my-context
 ```
 ![Badge Importante](http://img.shields.io/static/v1?label=IMPORTANTE&message=context&color=orange&style=for-the-badge)
 <br>
-Obs.: Recomendado criar/setar um contexto para não misturar ambientes (ex.: dev x prd).
+Obs.: Recomendado criar/setar um contexto para não confundir ambientes (ex.: dev x prd).
+
+<h1>Service Accounts</h1>
+
+A Service Accounts <b>default</b> permite todos os acessos e pode ser um risco de segurança.
+
+## Listando Service Accounts
+```
+kubectl get serviceaccounts
+```
+
+## Listando Resources/API Group
+```
+kubectl api-resources
+```
+
+## RBAC
+
+Sistema baseado em roles para garantir maior segurança no Kubernetes, dando os "papéis" necessários para os acessos.

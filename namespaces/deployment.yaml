@@ -1,24 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: "app-name-here"
-  labels:
-    app: "app-name-here"
+  name: server
 spec:
-  template:
   selector:
     matchLabels:
-      app: appnamehere
-    # quantidade de PODs  
-    replicas: 2
-    # aqui começa a config dos pods
+      app: server
     template:
       metadata:
         labels:
-          app: "app-name-here"
+          app: server
       spec:
+        serviceAccount: server
         containers:
-          - name: appnamehere
+          - name: server
             image: "image-app-name-here:latest"
             # minimum system requirements
             resources:
