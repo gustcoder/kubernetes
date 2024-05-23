@@ -5,6 +5,7 @@ metadata:
   labels:
     app: "app-name-here"
 spec:
+  namespace: my-namespace
   template:
   selector:
     matchLabels:

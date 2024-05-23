@@ -215,3 +215,26 @@ kubectl get certificates
 ```
 kubectl describe certificate certificate-name-here
 ```
+
+<h1>Namespaces</h1>
+
+É uma separação virtual/lógica do cluster para a instalação de cada recurso.
+
+Quando não informado, tudo será instalado no namespace <b>default</b>.
+
+Obs.: Recomendado criar um namespace sempre que um projeto for criado.
+
+## Criando namespaces
+```
+kubectl create ns my-namespace
+```
+
+## Listando namespaces
+```
+kubectl get ns
+```
+
+## Listando namespaces específicos
+```
+kubectl get po -n=my-namespace
+```
